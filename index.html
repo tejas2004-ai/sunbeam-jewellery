@@ -8,15 +8,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Playfair+Display:ital,wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css?v=luxuryletter" />
   </head>
   <body>
     <div class="announcement" aria-label="Promotion">
       <div class="announcement__track">
         <span>Complimentary shipping across India</span><i></i>
         <span>18k gold-plated jewellery made to be noticed</span><i></i>
+        <span>Bespoke atelier consultations available</span><i></i>
+        <span>Complimentary gift packaging on all orders</span><i></i>
         <span>Complimentary shipping across India</span><i></i>
         <span>18k gold-plated jewellery made to be noticed</span><i></i>
+        <span>Bespoke atelier consultations available</span><i></i>
+        <span>Complimentary gift packaging on all orders</span><i></i>
       </div>
     </div>
 
@@ -24,7 +28,11 @@
       <button class="icon-button menu-trigger" aria-label="Open menu" aria-expanded="false" data-open-menu>
         <span></span><span></span>
       </button>
-      <a href="#top" class="wordmark" aria-label="Sunbeam Jewellery home"><span>SUNBEAM</span><small>JEWELLERY</small><sup>®</sup></a>
+      <a href="#top" class="wordmark" aria-label="Sunbeam Jewellery home">
+        <span class="wordmark__sunbeam">SUNBEAM</span>
+        <span class="wordmark__jewellery">JEWELLERY</span>
+        <sup class="wordmark__reg">®</sup>
+      </a>
       <div class="header-actions">
         <button class="icon-button search-trigger" aria-label="Search" data-open-search>
           <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.6"></circle><path d="m16 16 5 5"></path></svg>
@@ -67,7 +75,24 @@
       </section>
 
       <section class="marquee" aria-label="Sunbeam Jewellery philosophy">
-        <div class="marquee__track"><span>Designed in India</span><b>✦</b><span>Worn everywhere</span><b>✦</b><span>Designed in India</span><b>✦</b><span>Worn everywhere</span><b>✦</b></div>
+        <div class="marquee__track">
+          <span>Designed in India</span><b>✦</b>
+          <span>Worn everywhere</span><b>✦</b>
+          <span>Modern heirlooms</span><b>✦</b>
+          <span>18k gold-plated</span><b>✦</b>
+          <span>Sculptural elegance</span><b>✦</b>
+          <span>Consciously crafted</span><b>✦</b>
+          <span>Art of adornment</span><b>✦</b>
+          <span>Bold & timeless</span><b>✦</b>
+          <span>Designed in India</span><b>✦</b>
+          <span>Worn everywhere</span><b>✦</b>
+          <span>Modern heirlooms</span><b>✦</b>
+          <span>18k gold-plated</span><b>✦</b>
+          <span>Sculptural elegance</span><b>✦</b>
+          <span>Consciously crafted</span><b>✦</b>
+          <span>Art of adornment</span><b>✦</b>
+          <span>Bold & timeless</span><b>✦</b>
+        </div>
       </section>
 
       <section class="edit section" id="shop" aria-labelledby="edit-title">
@@ -164,20 +189,43 @@
         <div class="service"><span class="service__icon">↗</span><h3>Here for you</h3><p>Personal styling from our jewellery experts.</p></div>
       </section>
 
-      <section class="newsletter" id="newsletter">
-        <p class="eyebrow">The Sunbeam letter</p>
-        <h2>A little <em>more</em> beautiful<br />in your inbox.</h2>
-        <form class="newsletter__form" data-newsletter-form>
-          <label class="sr-only" for="email">Your email address</label>
-          <input id="email" type="email" placeholder="Your email address" required />
-          <button type="submit" aria-label="Subscribe">→</button>
-        </form>
-        <p class="newsletter__response" aria-live="polite"></p>
+      <section class="newsletter" id="newsletter" aria-labelledby="newsletter-title">
+        <div class="newsletter__container">
+          <div class="newsletter__emblem" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L13.8 8.2L20 10L13.8 11.8L12 18L10.2 11.8L4 10L10.2 8.2L12 2Z"/></svg>
+          </div>
+          <p class="eyebrow">The Sunbeam Letter</p>
+          <h2 id="newsletter-title">A little <em>more</em> beautiful<br />in your inbox.</h2>
+          <p class="newsletter__description">
+            Be the first to discover new handcrafted heirloom drops, private atelier invitations, and styling notes. Enjoy 10% off your inaugural order.
+          </p>
+          <div class="newsletter__perks" aria-hidden="true">
+            <span>✦ 10% Welcome Gift</span>
+            <span>✦ Private Salon Access</span>
+            <span>✦ Rare Gem Previews</span>
+          </div>
+          <form class="newsletter__form" data-newsletter-form>
+            <label class="sr-only" for="email">Your email address</label>
+            <div class="newsletter__input-group">
+              <input id="email" type="email" placeholder="Enter your email address" autocomplete="email" required />
+              <button type="submit" class="newsletter__submit" aria-label="Subscribe to Sunbeam Letter">
+                <span>Subscribe</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+            </div>
+          </form>
+          <p class="newsletter__privacy">Consciously crafted correspondence. Zero spam. Unsubscribe anytime.</p>
+          <p class="newsletter__response" aria-live="polite"></p>
+        </div>
       </section>
     </main>
 
     <footer class="footer">
-      <a href="#top" class="footer__wordmark"><span>SUNBEAM</span><small>JEWELLERY</small><sup>®</sup></a>
+      <a href="#top" class="footer__wordmark" aria-label="Sunbeam Jewellery home">
+        <span class="wordmark__sunbeam">SUNBEAM</span>
+        <span class="wordmark__jewellery">JEWELLERY</span>
+        <sup class="wordmark__reg">®</sup>
+      </a>
       <div class="footer__columns">
         <div><h3>Client care</h3><a href="#top">Contact us</a><a href="#top">Shipping & returns</a><a href="#top">Care guide</a><a href="#top">FAQs</a></div>
         <div><h3>About</h3><a href="#story">Our story</a><a href="#atelier">Bespoke</a><a href="#top">Journal</a><a href="#top">Stockists</a></div>
