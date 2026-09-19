@@ -20,7 +20,7 @@ document.querySelectorAll('img').forEach(image => {
     if (image.dataset.fallbackApplied) return;
     image.dataset.fallbackApplied = 'true';
     image.classList.add('image-fallback');
-    image.src = 'assets/isharya-hero-campaign.png';
+    image.src = 'assets/sunbeam-hero-campaign.png';
   });
 });
 
@@ -133,7 +133,7 @@ document.querySelector('[data-newsletter-form]').addEventListener('submit', even
 document.querySelector('[data-search-form]').addEventListener('submit', event => {
   event.preventDefault();
   const query = document.querySelector('#search-input').value.trim();
-  document.querySelector('[data-search-message]').textContent = query ? `Searching the Isharya universe for “${query}”…` : 'Enter a word to discover something beautiful.';
+  document.querySelector('[data-search-message]').textContent = query ? `Searching the Sunbeam universe for “${query}”…` : 'Enter a word to discover something beautiful.';
 });
 document.querySelectorAll('.popular-searches button').forEach(button => button.addEventListener('click', () => {
   document.querySelector('#search-input').value = button.textContent;
