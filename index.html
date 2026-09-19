@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Playfair+Display:ital,wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=luxuryletter" />
+    <link rel="stylesheet" href="styles.css?v=storyfix2" />
   </head>
   <body>
     <div class="announcement" aria-label="Promotion">
@@ -166,16 +166,46 @@
         <a href="#top" class="text-link mobile-only">View all pieces <span>↗</span></a>
       </section>
 
-      <section class="story" id="story">
-        <div class="story__image story__image--one"><img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=1000&q=85" alt="Woman wearing a gold earring" loading="lazy" decoding="async" /></div>
-        <div class="story__copy">
-          <p class="eyebrow">Sunbeam Jewellery</p>
-          <h2>Jewellery with a point <em>of view.</em></h2>
-          <p>We imagine heritage through a thoroughly modern lens. Unexpected forms, vivid stones and joy in every detail—created for you and your many selves.</p>
-          <a href="#atelier" class="text-link">Meet Sunbeam <span>↗</span></a>
+      <section class="story" id="story" aria-labelledby="story-title">
+        <div class="story__visuals">
+          <div class="story__frame story__frame--main">
+            <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=1000&q=85" alt="Sculptural statement jewellery on tropical leaf" loading="lazy" decoding="async" />
+            <span class="story__badge">Artisan Made</span>
+          </div>
+          <div class="story__frame story__frame--accent">
+            <img src="https://images.unsplash.com/photo-1599459183200-59c7687a0275?auto=format&fit=crop&w=850&q=85" alt="Gold necklace layering" loading="lazy" decoding="async" />
+            <span class="story__frame-tag">18k Gold Vermeil</span>
+          </div>
         </div>
-        <div class="story__image story__image--two"><img src="https://images.unsplash.com/photo-1599459183200-59c7687a0275?auto=format&fit=crop&w=850&q=85" alt="Details of gold jewellery" loading="lazy" decoding="async" /></div>
-        <p class="story__side-note">Unmistakably<br />you</p>
+
+        <div class="story__copy">
+          <div class="story__emblem" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L13.8 8.2L20 10L13.8 11.8L12 18L10.2 11.8L4 10L10.2 8.2L12 2Z"/></svg>
+          </div>
+          <p class="eyebrow">Our Philosophy · Sunbeam</p>
+          <h2 id="story-title">Jewellery with a point <em>of view.</em></h2>
+          <p class="story__lead">
+            We imagine heritage through a thoroughly modern lens. Unexpected sculptural forms, vivid hand-cut stones, and unabashed joy in every detail—crafted for you and your many selves.
+          </p>
+          <div class="story__pillars">
+            <div class="story__pillar">
+              <strong>18K</strong>
+              <span>Gold Vermeil Heirlooms</span>
+            </div>
+            <div class="story__pillar">
+              <strong>100%</strong>
+              <span>Hypoallergenic & Conscious</span>
+            </div>
+            <div class="story__pillar">
+              <strong>Jaipur</strong>
+              <span>Heritage Gem Atelier</span>
+            </div>
+          </div>
+          <div class="story__actions">
+            <a href="#atelier" class="button">Meet the Atelier <span>↗</span></a>
+            <a href="#shop" class="text-link">Explore the Edit <span>↗</span></a>
+          </div>
+        </div>
       </section>
 
       <section class="atelier" id="atelier">
